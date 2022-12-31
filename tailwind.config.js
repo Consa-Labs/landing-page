@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{njk,md}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'teal': {
+          DEFAULT: '#01567A',
+        },
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

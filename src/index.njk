@@ -2,12 +2,162 @@
 layout: default
 ---
 
-<header>
+<header class="bg-blue-300 h-[80vh] overflow-hidden relative bg-cover bg-center mb-4">
 
-  {% img './src/_assets/img/wood.jpg', '', [420, 1000, 2560], '', '100vw' %}
+  {% img './src/_assets/img/ocean.jpg', '', [420, 1000, 2560], 'block h-full w-full inset-0 absolute object-cover', '100vw' %}
 
-  <nav>
-  </nav>
+  <div class="absolute inset-0 flex items-center justify-center flex-col mx-auto text-white lg:container px-4">
 
-  <h1>Consa</h1>
+    {% svgIcon "wave-alpha", "shrink-0 h-24 mb-4" %}
+
+    <h1 class="text-6xl uppercase font-black">Consa</h1>
+
+    <div class="max-w-[440px] text-center font-bold tracking-wide">
+      <p class="font-bold text-2xl my-8">Digital contractor or&nbsp;freelancer?</p>
+      <p class="font-bold text-2xl mb-8">We find and share opportunities for&nbsp;you.</p>
+
+      <a href="#apply" class="rounded bg-white text-teal px-4 py-2 transition-colors hover:bg-teal hover:text-white">Apply now</a>
+    </div>
+  </div>
 </header>
+
+{# <section>
+  <p>Business looking for only the best contract and freelance workers? </p>
+</section> #}
+
+<form id="apply" class="mx-auto lg:container px-4">
+
+  <div class="grid md:grid-cols-2 gap-4">
+    <label class="block">
+      <span class="text-teal">First name</span>
+      <input type="text" class="form-input mt-1 block w-full" placeholder="Susan">
+    </label>
+
+    <label class="block">
+      <span class="text-teal">Family name</span>
+      <input type="text" class="form-input mt-1 block w-full" placeholder="Pevensie">
+    </label>
+
+    <label class="block">
+      <span class="text-teal">Email address</span>
+      <input type="email" class="form-input mt-1 block w-full" placeholder="susan@narnia.gov.na">
+    </label>
+
+    <label class="block">
+      <span class="text-teal">LinkedIn profile</span>
+      <input type="text" class="form-input mt-1 block w-full" placeholder="linkedin.com/in/susanpevensie">
+    </label>
+
+    <fieldset class="block text-teal text-left col-span-full">
+      <legend class="text-gray-700 border-b block w-full">Profession</legend>
+      <div class="mt-2 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Backend Developer</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Business Analyst</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Content Designer</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Delivery Manager</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Frontend Developer</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Full Stack Developer</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Product Manager</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Scrum Manager</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Service Designer</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">UX/UI Designer</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">User Researcher</span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="block text-teal text-left">
+      <legend class="text-gray-700 border-b block w-full">IR35 preference</legend>
+      <div class="mt-2">
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Inside</span>
+          </label>
+        </div>
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">Outside</span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="block text-teal">
+      <legend class="text-gray-700 border-b block w-full">Communication preferences</legend>
+      <div class="mt-2">
+        <div>
+          <label class="inline-flex items-center">
+            <input class="form-checkbox" type="checkbox">
+            <span class="ml-2">I agree to be contacted by Consa about my application</span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <p class="text-teal text-center col-span-full">
+      By submitting you are agreeing to Consa's <a href="/pages/terms-and-conditions" class="underline hover:no-underline">terms and conditions</a>.
+    </p>
+
+    <p class="text-center col-span-full">
+      <input type="submit" class="rounded bg-teal border border-teal text-white px-6 py-3 transition-colors hover:bg-white hover:text-teal" value="Submit" />
+    </p>
+
+  </div>
+
+</form>

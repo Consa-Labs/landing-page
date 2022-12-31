@@ -30,4 +30,8 @@ module.exports = {
     return eleventyImage.generateHTML(metadata, imageAttrs);
   },
 
+  svgIcon: function(name, cls = null) {
+    return `<svg class="${cls}"><use xlink:href="/_assets/svgSprite.svg#svg-${name}"></use></svg>`;
+  }
+
 }

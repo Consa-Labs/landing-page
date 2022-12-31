@@ -20,12 +20,15 @@
     <meta name="generator" content="{{ eleventy.generator }}" />
     <link rel="author" href="/humans.txt" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   </head>
 
   <body>
     {# {% include 'blocks/header.njk' %} #}
 
-    <div id="site-content" class="sm:ml-16">
+    <div id="site-content" class="">
       {{ layoutContent | safe }}
 
       {% include 'blocks/footer.njk' %}
