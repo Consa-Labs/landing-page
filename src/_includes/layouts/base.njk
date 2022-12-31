@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <link rel="stylesheet" href="/_assets/tw.css?v={{ base.buildRef }}" media="screen" type="text/css">
+
+    <title>
+      {% if title %}
+        {{ title | safe }} |
+      {% endif %}
+      Consa
+    </title>
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta name="generator" content="{{ eleventy.generator }}" />
+    <link rel="author" href="/humans.txt" />
+
+  </head>
+
+  <body>
+    {# {% include 'blocks/header.njk' %} #}
+
+    <div id="site-content" class="sm:ml-16">
+      {{ layoutContent | safe }}
+
+      {% include 'blocks/footer.njk' %}
+    </div>
+    <!-- last build: {{ base.env }} {{ base.updatedTime }} -->
+  </body>
+</html>
