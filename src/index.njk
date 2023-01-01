@@ -21,31 +21,63 @@ layout: default
   </div>
 </header>
 
-{# <section>
-  <p>Business looking for only the best contract and freelance workers? </p>
-</section> #}
+<section class="mx-auto my-16 lg:container p-4 text-xl tracking-wide">
+  <div class="grid sm:grid-cols-3 gap-8 lg:gap-16">
+    <div class="max-w-[440px]">
+      <h1 class="text-2xl font-bold">Things to be aware&nbsp;of</h1>
+      <p>Words. So many words. We should put some important words here. Words like what makes Consa different. Why you should fill in your details, etc.</p>
+    </div>
 
-<form id="apply" class="mx-auto lg:container px-4">
+    <div class="sm:col-span-2 grid gap-4">
+      <div class="flex items-start">
+        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0">1</div>
+        <div>
+          <h2 class="text-xl font-bold">Words.</h2>
+          <p>Words. So many words. We should put some important words here.</p>
+        </div>
+      </div>
 
+      <div class="flex items-start">
+        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0">2</div>
+        <div>
+          <h2 class="text-xl font-bold">Words.</h2>
+          <p>Words. So many words. We should put some important words here.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start">
+        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0">3</div>
+        <div>
+          <h2 class="text-xl font-bold">Words.</h2>
+          <p>Words. So many words. We should put some important words here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<form id="apply" class="mx-auto lg:container p-4">
+  <h1 class="text-2xl text-teal font-bold my-4 border-b md:my-8">Apply now</h1>
   <div class="grid md:grid-cols-2 gap-4">
     <label class="block">
       <span class="text-teal">First name</span>
-      <input type="text" class="form-input mt-1 block w-full" placeholder="Susan">
+      <input required type="text" class="form-input mt-1 block w-full" placeholder="Susan">
     </label>
 
     <label class="block">
       <span class="text-teal">Family name</span>
-      <input type="text" class="form-input mt-1 block w-full" placeholder="Pevensie">
+      <input required type="text" class="form-input mt-1 block w-full" placeholder="Pevensie">
     </label>
 
     <label class="block">
       <span class="text-teal">Email address</span>
-      <input type="email" class="form-input mt-1 block w-full" placeholder="susan@narnia.gov.na">
+      <input required type="email" class="form-input mt-1 block w-full" placeholder="susan@narnia.gov.na">
     </label>
 
     <label class="block">
-      <span class="text-teal">LinkedIn profile</span>
-      <input type="text" class="form-input mt-1 block w-full" placeholder="linkedin.com/in/susanpevensie">
+      <span class="text-teal">LinkedIn profile <span class="text-gray-400"></span></span>
+      <input required type="text" class="form-input mt-1 block w-full" placeholder="susanpevensie">
     </label>
 
     <fieldset class="block text-teal text-left col-span-full">
@@ -161,3 +193,7 @@ layout: default
   </div>
 
 </form>
+
+<section class="mx-auto lg:container p-4">
+  <p>Are you business looking for only the best contract and freelance workers? </p>
+</section>
