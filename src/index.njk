@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="bg-blue-300 h-[80vh] overflow-hidden relative bg-cover bg-center mb-4">
+<header class="bg-blue-300 min-h-[80vh] overflow-hidden relative bg-cover bg-center mb-4">
 
   {% img './src/_assets/img/ocean.jpg', '', [420, 1000, 2560], 'block h-full w-full inset-0 absolute object-cover', '100vw' %}
 
@@ -21,35 +21,38 @@ layout: default
   </div>
 </header>
 
-<section class="mx-auto my-16 lg:container p-4 text-xl tracking-wide">
-  <div class="grid sm:grid-cols-3 gap-8 lg:gap-16">
+<section class="mx-auto my-12 lg:container p-4 text-xl tracking-wide">
+  <h1 class="text-teal text-2xl font-bold mb-4 border-b md:mb-8">Why Consa?</h1>
+
+  <div class="grid md:grid-cols-3 gap-8 lg:gap-16">
     <div class="max-w-[440px]">
-      <h1 class="text-2xl font-bold mb-1">Things to be aware&nbsp;of</h1>
-      <p class="font-serif">Words. So many words. We should put some important words here. Words like what makes Consa different. Why you should fill in your details, etc.</p>
+      <p class="font-serif">
+        We're on a mission to simplify finding your next tech contract. No more sifting through digital roles to find an opportunity with the right IR35 designation or day rate, because we'll only connect you with work that matches your preferences.
+      </p>
     </div>
 
     <div class="sm:col-span-2 grid gap-4">
       <div class="flex items-start">
-        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0">1</div>
+        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">1</div>
         <div>
-          <h2 class="text-xl font-bold">Words.</h2>
-          <p class="font-serif">Words. So many words. We should put some important words here.</p>
+          <h2 class="text-xl font-bold">Tailored opportunities.</h2>
+          <p class="font-serif">Only engage outside IR35? Great, those are the opportunities you will see.</p>
         </div>
       </div>
 
       <div class="flex items-start">
-        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0">2</div>
+        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">2</div>
         <div>
-          <h2 class="text-xl font-bold">Words.</h2>
-          <p class="font-serif">Words. So many words. We should put some important words here.</p>
+          <h2 class="text-xl font-bold">Hassle free.</h2>
+          <p class="font-serif">Everyone accepted onto Consa can receive a regular email of up-to-date and relevant opportunities.</p>
         </div>
       </div>
 
       <div class="flex items-start">
-        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0">3</div>
+        <div class="bg-teal text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 flex-shrink-0">3</div>
         <div>
-          <h2 class="text-xl font-bold">Words.</h2>
-          <p class="font-serif">Words. So many words. We should put some important words here.</p>
+          <h2 class="text-xl font-bold">No cost.</h2>
+          <p class="font-serif">You can start receiving opportunities today, free of charge.</p>
         </div>
       </div>
     </div>
@@ -59,6 +62,6 @@ layout: default
 
 {% include 'blocks/signupform.njk' %}
 
-<section class="mx-auto lg:container p-4">
+{# <section class="mx-auto lg:container p-4">
   <p>Are you business looking for only the best contract and freelance workers? </p>
-</section>
+</section> #}
