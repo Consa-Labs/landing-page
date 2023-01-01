@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer components {
 
-  * {
-    font-family: 'Figtree', sans-serif;
+  .mce_inline_error {
+    @apply text-red-400;
   }
-} */
+}

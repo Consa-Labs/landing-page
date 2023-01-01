@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{njk,md}"],
+  safelist: ['mce_inline_error'],
   theme: {
     fontFamily: {
       sans: ['Figtree', 'sans-serif'],

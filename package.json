@@ -9,7 +9,7 @@
     "dev:11ty": "ELEVENTY_ENV=development eleventy --serve",
     "dev:css": "tailwindcss -i src/_assets/tw.css -o dist/_assets/tw.css --watch",
     "build:11ty": "ELEVENTY_ENV=production eleventy",
-    "build:css": "tailwindcss -i src/_assets/tw.css -o dist/_assets/tw.css"
+    "build:css": "tailwindcss -i src/_assets/tw.css -o dist/_assets/tw.css --minify"
   },
   "author": "",
   "license": "ISC",
