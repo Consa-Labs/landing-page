@@ -33,7 +33,7 @@ module.exports = function (eleventyConfig) {
 
   const layouts = [
     {name: 'default', path: 'layouts/base.njk'},
-    // {name: 'textPage', path: 'layouts/textPage.njk'},
+    {name: 'page', path: 'layouts/page.njk'},
   ];
   layouts.forEach(layout => eleventyConfig.addLayoutAlias(layout.name, layout.path));
 
