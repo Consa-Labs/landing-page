@@ -13,3 +13,4 @@ npm run dev
 [] GTM (+GA and LinkedIn)
 [] Open Graph tags
 [] Favicon, etc
+[] Opt in to receive line on sign up form
