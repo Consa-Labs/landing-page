@@ -1,0 +1,11 @@
+# Humans
+Name: Matt Leary
+Web:
+
+Name: James Doc
+Web: jamesdoc.com
+
+# Technology
+- Eleventy
+- Tailwind
+- Netlify
