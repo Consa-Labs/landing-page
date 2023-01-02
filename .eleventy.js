@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
   const passThroughFiles = [
     "src/humans.txt",
     "src/robots.txt",
+    "src/_assets/img/ogimg.jpg",
     "src/_assets/svg/consa.svg",
   ];
   passThroughFiles.forEach(f => eleventyConfig.addPassthroughCopy(f, ""));
